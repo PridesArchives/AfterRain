@@ -217,10 +217,7 @@ public class AfterRain extends WaterAbility implements AddonAbility {
 	}
 	
 	private boolean atDestination(Location location, Location destination) {
-		if (location.distanceSquared(destination) <= (1 * 1)) {
-			return true;
-		}
-		return false;
+		return location.distanceSquared(destination) <= (1 * 1);
 	}
 	
 	@Override
